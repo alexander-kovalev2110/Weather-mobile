@@ -10,12 +10,12 @@ const Properties = ({ store, setShowMap }) => {
           visibility } = store;
 
 const properties = [
-    { title: "Cloud Cover", value: `${all}%`, icon: require('./icons/cloud.png'), isClickable: false },
-    { title: "Humidity", value: `${humidity}%`, icon: require('./icons/humidity.png'), isClickable: false },
-    { title: "Wind Speed", value: `${speed} m/s`, icon: require('./icons/wind.png'), isClickable: false },
-    { title: "Pressure", value: `${pressure} hPa`, icon: require('./icons/gauge.png'), isClickable: false },
-    { title: "Visibility", value: `${visibility}m`, icon: require('./icons/visibility.png'), isClickable: false },
-    { title: "Location", value: " ", icon: require('./icons/location.png'), isClickable: true },
+    { title: "Cloud Cover", value: `${all}%`, icon: require('../../assets/icons/cloud.png'), isClickable: false },
+    { title: "Humidity", value: `${humidity}%`, icon: require('../../assets/icons/humidity.png'), isClickable: false },
+    { title: "Wind Speed", value: `${speed} m/s`, icon: require('../../assets/icons/wind.png'), isClickable: false },
+    { title: "Pressure", value: `${pressure} hPa`, icon: require('../../assets/icons/gauge.png'), isClickable: false },
+    { title: "Visibility", value: `${visibility}m`, icon: require('../../assets/icons/visibility.png'), isClickable: false },
+    { title: "Location", value: " ", icon: require('../../assets/icons/location.png'), isClickable: true },
   ];
 
   return (

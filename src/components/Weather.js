@@ -9,8 +9,8 @@ const Weather = ({ store, setOpenForm, setShowMap }) => {
   const time = new Date((dt + timezone - 7200) * 1000).toLocaleString("ru-RU", { hour: "2-digit", minute: "2-digit" });
   const isDay = dt >= sunrise && dt < sunset;   // Daytime  
   const backgroundImage = isDay
-      ? require('./icons/day.png')    // Daytime background
-      : require('./icons/night.png'); // Night background
+      ? require('../../assets/icons/day.png')    // Daytime background
+      : require('../../assets/icons/night.png'); // Night background
 
   return (
     <ImageBackground source={backgroundImage} style={styles.background} resizeMode="cover">

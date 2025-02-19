@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
-import { Ionicons } from '@expo/vector-icons';
 
 const Map = ({ position, closeMap }) => {
   const [showTitle, setShowTitle] = useState(true);     // Control display title - show/hide
@@ -31,7 +30,7 @@ const Map = ({ position, closeMap }) => {
       </MapView>
 
       <TouchableOpacity style={styles.closeButton} onPress={closeMap}>
-        <Ionicons name="close" size={24} color="#ff5c5c" />     // "X"
+        <Text style={styles.closeButtonText}>Close</Text>
       </TouchableOpacity>
     </View>
   );
@@ -63,6 +62,11 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
     shadowRadius: 3,
+  },
+  closeButtonText: {
+    color: '#ff5c5c', 
+    fontSize: 16, 
+    textAlign: 'center',
   },
 });
 
